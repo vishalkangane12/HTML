@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<TITLE>Expression Demo</title>
+		<script src="angular.min.js"></script>
+		<script src="./expressionDemo.js">
+		</script>
+	</head>
+	<body ng-app="" ng-init="digits=[1,2,3,4,5,6,7,8,9,10];
+		alphabets=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']">
+		<div id="showTableDiv">
+			<ol>
+				<ul ng-repeat="digit in digits">
+					{{digit}}
+				</ul>
+			</ol>
+			<!--<ol>
+				<ul ng-repeat="alphabet in alphabets">
+					{{alphabet}}
+				</ul>
+			</ol>-->
+		</div>
+		<div>
+			<h3>Tables</h3>
+			<label for="show_table">Choose number to see table::</label>
+			<select name="show_table" id="show_table" onchange="showTable()" style="width: 5%; color: red">
+			</select>
+			<ul id="unOrderedList" style="list-style-type: none; color: red">
+			<ul>
+		</div>
+	</body>
+</html>
